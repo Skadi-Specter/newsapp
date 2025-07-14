@@ -48,10 +48,11 @@ NewsApp（智阅新闻） 是一个基于 Android 的新闻聚合与AI助手应�
 本项目涉及三类API密钥，**请务必在首次运行前完成如下配置**：
 
 ### 1. 新闻API密钥（News API Key）
+- **聚合数据**：https://www.juhe.cn
 - **配置位置**：
   `app/src/main/java/com/example/newsapp/network/NewsApi.java`
 - **配置方法**：
-  找到如下代码，将`NEWS_API_KEY`的值替换为你自己的新闻API密钥（聚合数据：https://www.juhe.cn/）：
+  找到如下代码，将`NEWS_API_KEY`的值替换为你自己的新闻API密钥（）：
   ```java
   // 新闻API密钥
   String NEWS_API_KEY = "你的AppKey";
@@ -61,10 +62,11 @@ NewsApp（智阅新闻） 是一个基于 Android 的新闻聚合与AI助手应�
 ---
 
 ### 2. AI密钥（AI API Key）
+- **硅基流动**：https://www.siliconflow.cn
 - **配置位置**：
   `app/src/main/java/com/example/newsapp/network/ai/AiApiService.java`
 - **配置方法**：
-  找到如下代码，将`API_KEY`的值替换为你自己的AI密钥（硅基流动：https://www.siliconflow.cn/）：
+  找到如下代码，将`API_KEY`的值替换为你自己的AI密钥：
   ```java
   String API_KEY = "你的AI密钥";
   ```
@@ -73,10 +75,11 @@ NewsApp（智阅新闻） 是一个基于 Android 的新闻聚合与AI助手应�
 ---
 
 ### 3. 语音合成密钥（TTS API Key）
+- **硅基流动**：https://www.siliconflow.cn
 - **配置位置**：
   `app/src/main/java/com/example/newsapp/network/tts/TtsApiService.java`
 - **配置方法**：
-  找到如下代码，将`API_KEY`的值替换为你自己的TTS密钥（硅基流动：https://www.siliconflow.cn/）：
+  找到如下代码，将`API_KEY`的值替换为你自己的TTS密钥：
   ```java
   String API_KEY = "你的TTS密钥";
   ```
