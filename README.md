@@ -31,7 +31,7 @@ NewsApp（智阅新闻） 是一个基于 Android 的新闻聚合与AI助手应�
 
 1. **克隆项目**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Skadi-Specter/newsapp.git
    ```
 
 2. **配置三类API密钥**
