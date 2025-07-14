@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- 顶部标题和返回 -->
+    <include layout="@layout/title"/>
+
+    <!-- 头像 -->
+    <RelativeLayout
+        android:id="@+id/layout_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+    </RelativeLayout>
+
+    <!-- 昵称、封面、个性签名等 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFF">
+        <RelativeLayout android:id="@+id/layout_nickname" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="昵称" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_nickname" android:text="未设置" android:layout_toLeftOf="@+id/arrow1" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/arrow1" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F5F5F5"/>
+        <RelativeLayout android:id="@+id/layout_cover" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="封面" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/iv_cover" android:layout_width="40dp" android:layout_height="40dp" android:layout_toLeftOf="@+id/arrow2" android:layout_centerVertical="true" android:layout_marginEnd="8dp"/>
+            <ImageView android:id="@+id/arrow2" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F5F5F5"/>
+        <RelativeLayout android:id="@+id/layout_signature" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="个性签名" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_signature" android:text="未设置" android:layout_toLeftOf="@+id/arrow3" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/arrow3" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 性别、年龄、生日、所在地 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFF">
+        <RelativeLayout android:id="@+id/layout_gender" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="性别" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_gender" android:text="未设置" android:layout_toLeftOf="@+id/arrow4" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/arrow4" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F5F5F5"/>
+        <RelativeLayout android:id="@+id/layout_age" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="年龄" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_age" android:text="未设置" android:layout_toLeftOf="@+id/arrow5" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/arrow5" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F5F5F5"/>
+        <RelativeLayout android:id="@+id/layout_birthday" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="生日" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_birthday" android:text="未设置" android:layout_toLeftOf="@+id/arrow6" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/arrow6" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F5F5F5"/>
+        <RelativeLayout android:id="@+id/layout_location" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:text="所在地" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_location" android:text="未设置" android:layout_toLeftOf="@+id/arrow7" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/arrow7" android:src="@drawable/ic_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

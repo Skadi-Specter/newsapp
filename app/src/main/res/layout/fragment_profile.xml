@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 未登录界面 -->
+    <include layout="@layout/layout_login_prompt" />
+
+    <!-- 已登录界面（用ScrollView包裹，内容见上条完整个人信息xml） -->
+    <include
+        android:id="@+id/layout_profile"
+        layout="@layout/layout_profile_info"
+        android:visibility="gone"/>
+
+</FrameLayout>

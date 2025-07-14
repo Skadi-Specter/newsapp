@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".NewsApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/newsapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/newsapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewsApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.main.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NewsApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NewsApp" />
+        <activity
+            android:name=".ui.detail.NewsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true" />
+        <activity android:name=".login.ForgetPwdActivity"/>
+        <activity
+            android:name=".ui.profile.EditProfileActivity"
+            android:exported="false"
+            android:label="编辑资料" />
+        <activity
+            android:name=".ui.profile.RecentActivity"
+            android:exported="false" />
+        <activity android:name=".network.CacheTestActivity"/>
+        <activity android:name=".ui.profile.LogoutTestActivity"/>
+        <activity android:name=".ui.profile.ScrollTestActivity"/>
+        <activity
+            android:name=".ui.publish.PublishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.updates.CommentActivity"
+            android:exported="false"
+            android:label="评论详情"/>
+        <activity
+            android:name=".ui.user.UserProfileActivity"
+            android:exported="false"
+            android:label="用户主页"
+            android:theme="@style/Theme.NewsApp.NoActionBar"/>
+        <activity
+            android:name=".ui.profile.FollowTabActivity"
+            android:exported="false"
+            android:label="关注/粉丝"
+            android:theme="@style/Theme.NewsApp.NoActionBar"/>
+        <activity
+            android:name=".ui.main.SearchResultActivity"
+            android:exported="false"
+            android:label="搜索结果" />
+    </application>
+
+</manifest>
