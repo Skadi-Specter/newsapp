@@ -84,4 +84,3 @@ NewsApp（智阅新闻） 是一个基于 Android 的新闻聚合与AI助手应�
   String API_KEY = "你的TTS密钥";
   ```
 - **用途**：用于新闻内容的语音朗读功能。
-"# newsapp" 
