@@ -52,7 +52,7 @@ NewsApp（智阅新闻） 是一个基于 Android 的新闻聚合与AI助手应�
 - **配置位置**：
   `app/src/main/java/com/example/newsapp/network/NewsApi.java`
 - **配置方法**：
-  找到如下代码，将`NEWS_API_KEY`的值替换为你自己的新闻API密钥（）：
+  找到如下代码，将`NEWS_API_KEY`的值替换为你自己的新闻API密钥：
   ```java
   // 新闻API密钥
   String NEWS_API_KEY = "你的AppKey";
