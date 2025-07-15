@@ -113,6 +113,7 @@ public class ReplyAdapter extends RecyclerView.Adapter<ReplyAdapter.ReplyViewHol
                 });
             }).start();
             tvReplyContent.setText(reply.content);
+            tvReplyTime.setText(com.example.newsapp.utils.TimeUtils.getFriendlyTimeSpanByNow(reply.timestamp));
             itemView.setOnClickListener(null);
         }
     }
